@@ -16,7 +16,7 @@ Author URI: https://facebook.com/torresdigital */
             $admin_bar->add_menu( array(
                 'id'    => 'extplorer',
                 'title' => ' ❉ eXtPlorer  - LOGIN',
-                'href'  => '/wp-content/plugins/torres-digital-extplorer-wordpress-plugin-main/eXtplorer_2.1.13/',
+                'href'  => '/wp-content/plugins/torres-digital-eXtPlorer-wordpress-plugin-main/eXtplorer_2.1.13/',
                 'meta'  => array(
                     'title' => __('* eXtPlorer  - LOGIN'),
                     'target' => '_blank',
