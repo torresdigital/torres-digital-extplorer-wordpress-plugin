@@ -1,31 +1,31 @@
 <?php /* The Silence is Gold!
 
-Plugin Name: Torres Digital - eXtPlorer IDE WP Plugin
+Plugin Name: Torres Digital - eXtPlorer WP Plugin
 Plugin URI: http://torresdigital.com.br/
-Description: ❉ This plugin allows the <strong>eXtPlorer IDE</strong> to be accessed directly through the Wordpress Panel. Simple as that, simple as life should be. Source Code on GitHub https://github.com/eXtPlorer/eXtPlorer | eXtPlorer IDE Site - https://eXtPlorer.net/
+Description: ❉ This plugin allows the <strong>eXtPlorer </strong> to be accessed directly through the Wordpress Panel. Simple as that, simple as life should be. Source Code on GitHub https://github.com/eXtPlorer/eXtPlorer | eXtPlorer  Site - https://eXtPlorer.net/
 Version: 2.2.0.2020
 Author: Torres Digital -Sites → Lojas Virtuais e e-Commerce
 Author URI: https://facebook.com/torresdigital */
 
      /**
-        *Torres Digital eXtPlorer IDE WP Plugin By Torres Digital ! // Source https://extreme-ip-lookup.com/
+        *Torres Digital eXtPlorer  WP Plugin By Torres Digital ! // Source https://extreme-ip-lookup.com/
         *
         */
         add_action('admin_bar_menu', 'add_toolbar_items', 100);
         function add_toolbar_items($admin_bar){
             $admin_bar->add_menu( array(
-                'id'    => 'torres-digital-extplorer-wordpress-plugin',
-                'title' => ' ❉ eXtPlorer - LOGIN',
-                'href'  => '/wp-content/plugins/torres-digital-torres-digital-extplorer-wordpress-plugin-wp-plugin-master/eXtPlorer-master/lib/login.php',
+                'id'    => 'eXtPlorer-',
+                'title' => ' ❉ eXtPlorer  - LOGIN',
+                'href'  => '/wp-content/plugins/torres-digital-eXtPlorer--wp-plugin-master/eXtPlorer-master/lib/login.php',
                 'meta'  => array(
-                    'title' => __('* eXtPlorer - LOGIN'),
+                    'title' => __('* eXtPlorer  - LOGIN'),
                     'target' => '_blank',
-                    'class' => 'torres-digital-extplorer-wordpress-plugin'
+                    'class' => 'eXtPlorer-'
                 ),
             ));
             $admin_bar->add_menu( array(
-                'id'    => 'torres-digital-extplorer-wordpress-plugin-sub-item',
-                'parent' => 'torres-digital-extplorer-wordpress-plugin',
+                'id'    => 'eXtPlorer--sub-item',
+                'parent' => 'eXtPlorer-',
                 'title' => 'Torres Digital - facebook <i class="fa fa-facebook-square" aria-hidden="true"></i>',
                 'href'  => 'https://www.facebook.com/torresdigital/',
                 'meta'  => array(
@@ -35,8 +35,8 @@ Author URI: https://facebook.com/torresdigital */
                 ),
             ));
             $admin_bar->add_menu( array(
-                'id'    => 'torres-digital-extplorer-wordpress-plugin-second-sub-item',
-                'parent' => 'torres-digital-extplorer-wordpress-plugin',
+                'id'    => 'eXtPlorer-second-sub-item',
+                'parent' => 'eXtPlorer-',
                 'title' => 'Torres Digital -Sites → Lojas Virtuais e e-Commerce',
                 'href'  => 'https://www.torresdigital.tk/',
                 'meta'  => array(
