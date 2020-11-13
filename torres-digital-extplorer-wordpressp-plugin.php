@@ -1,14 +1,14 @@
 <?php /* The Silence is Gold!
 
-Plugin Name: Torres Digital - eXtPlorer WP Plugin
-Plugin URI: http://torresdigital.com.br/
-Description: ❉ This plugin allows the <strong>eXtPlorer </strong> to be accessed directly through the Wordpress Panel. Simple as that, simple as life should be. Source Code on GitHub https://github.com/eXtPlorer/eXtPlorer | eXtPlorer  Site - https://eXtPlorer.net/
+Plugin Name: Torres Digital - eXtPlorer Wordpress Plugin
+Plugin URI: http://torresdigital.tk
+Description: ❉ This plugin allows the <strong>eXtPlorer </strong> to be accessed directly through the Wordpress Panel. Simple as that, simple as life should be. Source Code on GitHub https://github.com/torresdigital/torres-digital-eXtPlorer-wordpress-plugin eXtPlorer  Site - https://extplorer.net/
 Version: 1.0.0
 Author: Torres Digital -Sites → Lojas Virtuais e e-Commerce
 Author URI: https://facebook.com/torresdigital */
 
      /**
-        *Torres Digital eXtPlorer  WP Plugin By Torres Digital ! // Source https://extreme-ip-lookup.com/
+        *Torres Digital eXtPlorer  WP Plugin By Torres Digital !
         *
         */
         add_action('admin_bar_menu', 'add_toolbar_items_ext', 100);
@@ -16,7 +16,7 @@ Author URI: https://facebook.com/torresdigital */
             $admin_bar->add_menu( array(
                 'id'    => 'extplorer',
                 'title' => ' ❉ eXtPlorer  - LOGIN',
-                'href'  => '/wp-content/plugins/torres-digital-extplorer-wordpress-plugin/extplorer/',
+                'href'  => '/wp-content/plugins/torres-digital-extplorer-wordpress-plugin/eXtplorer_2.1.13/',
                 'meta'  => array(
                     'title' => __('* eXtPlorer  - LOGIN'),
                     'target' => '_blank',
