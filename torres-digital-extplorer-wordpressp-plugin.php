@@ -11,16 +11,16 @@ Author URI: https://facebook.com/torresdigital */
         *Torres Digital eXtPlorer  WP Plugin By Torres Digital ! // Source https://extreme-ip-lookup.com/
         *
         */
-        add_action('admin_bar_menu', 'add_toolbar_items', 100);
+        add_action('admin_bar_menu', 'add_toolbar_items', 200);
         function add_toolbar_items($admin_bar){
             $admin_bar->add_menu( array(
                 'id'    => 'extplorer',
                 'title' => ' ❉ eXtPlorer  - LOGIN',
-                'href'  => '/wp-content/plugins/torres-digital-extplorer-wp-plugin-main/eXtplorer_2.1.13/',
+                'href'  => '/wp-content/plugins/torres-digital-extplorer-wordpress-plugin/extplorer/',
                 'meta'  => array(
                     'title' => __('* eXtPlorer  - LOGIN'),
                     'target' => '_blank',
-                    'class' => 'extplorer-'
+                    'class' => 'extplorer'
                 ),
             ));
             $admin_bar->add_menu( array(
