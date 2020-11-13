@@ -1,6 +1,6 @@
 /*Torres Digital ICECoder IDE WP Plugin*/
 
-#wp-admin-bar-torres-digital-extplorer {
+#wp-admin-bar-extplorer {
     background: linear-gradient(270deg, #5f0eae, #f200c8, #17f200, #00f2e9, #f2d700, #2600f2) !important;
     background-size: auto;
     background-size: 1200% 1200% !important;
@@ -33,7 +33,7 @@
 
 html i, html cite, html em, html var, html dfn { font-style: initial;}
 
-#wp-admin-bar-torres-digital-extplorer fa {font-family: "Font Awesome"}
+#wp-admin-bar-extplorer fa {font-family: "Font Awesome"}
 .fa.fa-snowflake-o:before {font-family: 'FontAwesome';content: "\f2dc";}
 .fa.fa-facebook-square:before {
 
