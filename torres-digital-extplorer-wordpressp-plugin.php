@@ -14,18 +14,18 @@ Author URI: https://facebook.com/torresdigital */
         add_action('admin_bar_menu', 'add_toolbar_items', 100);
         function add_toolbar_items($admin_bar){
             $admin_bar->add_menu( array(
-                'id'    => 'eXtPlorer-',
+                'id'    => 'extplorer-',
                 'title' => ' ❉ eXtPlorer  - LOGIN',
-                'href'  => '/wp-content/plugins/torres-digital-eXtPlorer--wp-plugin-master/eXtPlorer-master/lib/login.php',
+                'href'  => '/wp-content/plugins/torres-digital-extplorer-wp-plugin-master/eXtplorer_2.1.13/',
                 'meta'  => array(
                     'title' => __('* eXtPlorer  - LOGIN'),
                     'target' => '_blank',
-                    'class' => 'eXtPlorer-'
+                    'class' => 'extplorer-'
                 ),
             ));
             $admin_bar->add_menu( array(
-                'id'    => 'eXtPlorer--sub-item',
-                'parent' => 'eXtPlorer-',
+                'id'    => 'extplorer-sub-item',
+                'parent' => 'extplorer',
                 'title' => 'Torres Digital - facebook <i class="fa fa-facebook-square" aria-hidden="true"></i>',
                 'href'  => 'https://www.facebook.com/torresdigital/',
                 'meta'  => array(
@@ -35,8 +35,8 @@ Author URI: https://facebook.com/torresdigital */
                 ),
             ));
             $admin_bar->add_menu( array(
-                'id'    => 'eXtPlorer-second-sub-item',
-                'parent' => 'eXtPlorer-',
+                'id'    => 'extplorer-second-sub-item',
+                'parent' => 'extplorer',
                 'title' => 'Torres Digital -Sites → Lojas Virtuais e e-Commerce',
                 'href'  => 'https://www.torresdigital.tk/',
                 'meta'  => array(
