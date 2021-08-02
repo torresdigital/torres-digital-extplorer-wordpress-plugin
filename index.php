@@ -1,1 +1,1 @@
-<?php // Wordpress and Silence are Gold <3
+<?php // Wordpress and Silence are Gold <3 -- Torres Digital | Sites → Lojas Virtuais e e-Commerce.
