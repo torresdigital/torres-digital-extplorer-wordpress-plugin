@@ -1,11 +1,15 @@
 <?php /* The Silence is Gold!
 
-Plugin Name: Torres Digital - eXtPlorer Wordpress Plugin
+Plugin Name: Torres Digital - eXtPlorer Wordpress Plugin 🟢
 Plugin URI: http://torresdigital.com.br
 Description: ❉ This plugin allows the <strong>eXtPlorer </strong> to be accessed directly through the Wordpress Panel. Simple as that, simple as life should be. Source Code on GitHub https://github.com/torresdigital/torres-digital-eXtPlorer-wordpress-plugin eXtPlorer  Site - https://extplorer.net/
-Version: 2.2.3 - 2023
+Version: 2.2.4 - 2024
 Author: Torres Digital | Sites → Lojas Virtuais e e-Commerce.
 Author URI: https://facebook.com/torresdigital */
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
 
      /**
         *Torres Digital eXtPlorer  WP Plugin By Torres Digital !
@@ -15,7 +19,7 @@ Author URI: https://facebook.com/torresdigital */
         function add_toolbar_items_ext($admin_bar){
             $admin_bar->add_menu( array(
                 'id'    => 'extplorer',
-                'title' => ' ❉ eXtPlorer  - LOGIN',
+                'title' => ' 🟢 eXtPlorer  - 🚀LOGIN ',
                 'href'  => '/wp-content/plugins/torres-digital-extplorer-wordpress-plugin-main/eXtplorer_2.1.15/',
                 'meta'  => array(
                     'title' => __('* eXtPlorer  - LOGIN'),
@@ -26,27 +30,45 @@ Author URI: https://facebook.com/torresdigital */
             $admin_bar->add_menu( array(
                 'id'    => 'extplorer-sub-item',
                 'parent' => 'extplorer',
-                'title' => 'Torres Digital - facebook <i class="fa fa-facebook-square" aria-hidden="true"></i>',
+                'title' => 'Torres Digital - facebook <i class="fab fa-facebook-f"></i>',
                 'href'  => 'https://www.facebook.com/torresdigital/',
                 'meta'  => array(
                     'title' => __('Torres Digital - facebook'),
                     'target' => '_blank',
-                    'class' => 'my_menu_item_class'
+                    'class' => 'redes-sociais-facebook'
                 ),
             ));
             $admin_bar->add_menu( array(
                 'id'    => 'extplorer-second-sub-item',
                 'parent' => 'extplorer',
                 'title' => 'Torres Digital -Sites → Lojas Virtuais e e-Commerce',
-                'href'  => 'https://www.torresdigital.tk/',
+                'href'  => 'https://www.torresdigital.com.br/',
                 'meta'  => array(
                     'title' => __('Torres Digital -Sites → Lojas Virtuais e e-Commerce'),
                     'target' => '_blank',
-                    'class' => 'my_menu_item_class'
+                    'class' => 'site-torres-digital'
                 ),
             ));
         }
 
+/**
+ * Font Awesome Kit Setup
+ *
+ * This will add your Font Awesome Kit to the front-end, the admin back-end,
+ * and the login screen area.
+ */
+if (! function_exists('fa_custom_setup_kit') ) {
+  function fa_custom_setup_kit($kit_url = 'https://kit.fontawesome.com/d292a654fc.js') {
+    foreach ( [ 'wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts' ] as $action ) {
+      add_action(
+        $action,
+        function () use ( $kit_url ) {
+          wp_enqueue_script( 'font-awesome-kit', $kit_url, [], null );
+        }
+      );
+    }
+  }
+}
 
 
 /*
