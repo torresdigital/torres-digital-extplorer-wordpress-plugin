@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         function add_toolbar_items_ext($admin_bar){
             $admin_bar->add_menu( array(
                 'id'    => 'extplorer',
-                'title' => ' 🟢 eXtPlorer  - 🚀LOGIN ',
+                'title' => ' 🟢 eXtPlorer login 🚀',
                 'href'  => '/wp-content/plugins/torres-digital-extplorer-wordpress-plugin-main/eXtplorer_2.1.15/',
                 'meta'  => array(
                     'title' => __('* eXtPlorer  - LOGIN'),
