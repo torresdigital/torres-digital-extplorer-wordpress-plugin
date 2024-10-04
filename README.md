@@ -1,5 +1,5 @@
 # Torres Digital eXtplorer WordPress Plugin
- ## a cPanel file manager alternative to you Files on Host
+ ## a cPanel file manager alternative to you Webhost Files.
 
 use eXtplorer on servers without cPanel or file manager to manager archives: download, edit, change the permissions and more
 
